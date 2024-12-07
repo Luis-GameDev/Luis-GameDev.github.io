@@ -16,11 +16,191 @@
             <a href="#contact">Contact</a>
         </nav>
         <div class="header-right">
-            <button id="language-switcher">EN/DE</button>
+            <button id="language-switcher">English</button>
         </div>
     </header>
+
     <main>
-        <div>Hello, my name is Luis</div>
+        <section id="intro">
+            <h1 style="text-align: left; margin-bottom: -0.5em; margin-top: -0.2em;">Luis T.</h1>
+            <p class="location" style="text-align: left; margin-bottom: 1em; margin-top: 0.6em;">Mannheim, Germany</p>
+            <p class="bio" style="text-align: left; margin-bottom: 0em;">I'm a junior game and web developer with a passion for creating innovative and interactive digital experiences. I'm mainly focusing on the backend side of programming while I also have an interest in 3D Art and Asset Modeling.</p>
+        </section>
+
+        <section id="technologies">
+            <h2 style="text-align: left; margin-bottom: 0em;">What I work with:</h2>
+            <div id="Grad">
+                <div id="leftGrad"></div>
+                <div id="rightGrad"></div>
+            </div>
+            <div class="tech-icons">
+                <div class="tech-item">
+                    <img src="icons/javascript.svg" alt="JavaScript" />
+                    <p>JavaScript</p>
+                </div>
+                <div class="tech-item">
+                    <img src="icons/html5.svg" alt="HTML5" />
+                    HTML
+                </div>
+                <div class="tech-item">
+                    <img src="icons/css3.svg" alt="CSS3" />
+                    CSS
+                </div>
+                <div class="tech-item">
+                    <img src="icons/nodejs.svg" alt="NodeJS" />
+                    Node.JS
+                </div>
+                <div class="tech-item">
+                    <img src="icons/unity.svg" alt="Unity" />
+                    Unity
+                </div>
+                <div class="tech-item">
+                    <img src="icons/csharp.svg" alt="C#" />
+                    C#
+                </div>
+                <div class="tech-item">
+                    <img src="icons/php.svg" alt="PHP" />
+                    PHP
+                </div>
+                <div class="tech-item">
+                    <img src="icons/sql.svg" alt="SQL" />
+                    SQL
+                </div>
+                <div class="tech-item">
+                    <img src="icons/mysql.svg" alt="MySQL" />
+                    MySQL
+                </div>
+                <div class="tech-item">
+                    <img src="icons/discordjs.svg" alt="Discord.JS" />
+                    Discord.JS
+                </div>
+                <div class="tech-item">
+                    <img src="icons/javascript.svg" alt="JavaScript" />
+                    <p>JavaScript</p>
+                </div>
+                <div class="tech-item">
+                    <img src="icons/html5.svg" alt="HTML5" />
+                    HTML
+                </div>
+                <div class="tech-item">
+                    <img src="icons/css3.svg" alt="CSS3" />
+                    CSS
+                </div>
+                <div class="tech-item">
+                    <img src="icons/nodejs.svg" alt="NodeJS" />
+                    Node.JS
+                </div>
+                <div class="tech-item">
+                    <img src="icons/unity.svg" alt="Unity" />
+                    Unity
+                </div>
+                <div class="tech-item">
+                    <img src="icons/csharp.svg" alt="C#" />
+                    C#
+                </div>
+                <div class="tech-item">
+                    <img src="icons/php.svg" alt="PHP" />
+                    PHP
+                </div>
+                <div class="tech-item">
+                    <img src="icons/sql.svg" alt="SQL" />
+                    SQL
+                </div>
+                <div class="tech-item">
+                    <img src="icons/mysql.svg" alt="MySQL" />
+                    MySQL
+                </div>
+                <div class="tech-item">
+                    <img src="icons/discordjs.svg" alt="Discord.JS" />
+                    Discord.JS
+                </div>
+                <div class="tech-item">
+                    <img src="icons/javascript.svg" alt="JavaScript" />
+                    <p>JavaScript</p>
+                </div>
+                <div class="tech-item">
+                    <img src="icons/html5.svg" alt="HTML5" />
+                    HTML
+                </div>
+                <div class="tech-item">
+                    <img src="icons/css3.svg" alt="CSS3" />
+                    CSS
+                </div>
+                <div class="tech-item">
+                    <img src="icons/nodejs.svg" alt="NodeJS" />
+                    Node.JS
+                </div>
+                <div class="tech-item">
+                    <img src="icons/unity.svg" alt="Unity" />
+                    Unity
+                </div>
+                <div class="tech-item">
+                    <img src="icons/csharp.svg" alt="C#" />
+                    C#
+                </div>
+                <div class="tech-item">
+                    <img src="icons/php.svg" alt="PHP" />
+                    PHP
+                </div>
+                <div class="tech-item">
+                    <img src="icons/sql.svg" alt="SQL" />
+                    SQL
+                </div>
+                <div class="tech-item">
+                    <img src="icons/mysql.svg" alt="MySQL" />
+                    MySQL
+                </div>
+                <div class="tech-item">
+                    <img src="icons/discordjs.svg" alt="Discord.JS" />
+                    Discord.JS
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <div id="OLex">
+
+            </div>
+            <div id="HDab">
+
+            </div>
+            <div id="GRpz">
+
+            </div>
+        </section>
+        <section id="projects">
+
+        </section>
+        <section id="contact">
+
+        </section>
     </main>
+
+    <script>
+        const languageSwitcher = document.getElementById("language-switcher");
+        const introText = document.querySelector("#intro .bio");
+        const introLocation = document.querySelector("#intro .location");
+        const techSection = document.querySelector("#technologies h2");
+
+        let language = "en";
+
+        languageSwitcher.addEventListener("click", () => {
+            language = language === "en" ? "de" : "en";
+            updateLanguage();
+        });
+
+        function updateLanguage() {
+            if (language === "de") {
+                introText.textContent = "Ich bin ein Junior Game- und Web-Entwickler mit einer Leidenschaft für die Erstellung innovativer und interaktiver digitaler Erlebnisse.";
+                introLocation.textContent = "Mannheim, Deutschland";
+                techSection.textContent = "Mit was ich arbeite:";
+                languageSwitcher.textContent = "Deutsch";
+            } else {
+                introText.textContent = "I'm a junior game and web developer with a passion for creating innovative and interactive digital experiences. I'm mainly focusing on the backend side of programming while I also have an interest in 3D Art and Asset Modeling.";
+                introLocation.textContent = "Mannheim, Germany";
+                techSection.textContent = "What I work with:";
+                languageSwitcher.textContent = "English";
+            }
+        }
+    </script>
 </body>
 </html>
