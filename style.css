@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'PS2P';
+    src: url('PressStart2P-Regular.ttf');
+}
+
+body {
+    margin: 0;
+    font-family: cursive; 
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1e1e1e;
+    font-family: 'PS2P', cursive; 
+    font-size: 0.9em;
+}
+
+.header-left {
+    font-size: 1.2em;
+}
+
+.header-center a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1em;
+}
+
+.header-center a:hover {
+    color: #00ffcc;
+}
+
+.header-right button {
+    background-color: #00ffcc;
+    color: #121212;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 5px;
+}
+
+.header-right button:hover {
+    background-color: #00ccaa;
+    transform: scale(1.03);
+}
