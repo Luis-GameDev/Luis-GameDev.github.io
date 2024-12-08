@@ -116,15 +116,19 @@ main {
 }
 
 .tech-item img {
-    width: 3.5em;
-    height: 3.5em;
+    width: 3em;
+    height: 3em;
 }
 
 .tech-item {
-    margin: 0 0.4em;
+    margin: 0 0.6em;
     display: flex;
     align-items: center; 
     text-align: center;
+}
+
+.tech-item p {
+    margin-left: 0.3em;
 }
 
 #leftGrad {
@@ -152,4 +156,13 @@ main {
 
 h3 {
     font-size: 1em;
+}
+
+div button {
+    background-color: gray; 
+    color: white;
+}
+
+div button:hover {
+    cursor: pointer;
 }
