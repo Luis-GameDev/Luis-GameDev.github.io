@@ -3,6 +3,10 @@
     src: url('PressStart2P-Regular.ttf');
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: cursive;
