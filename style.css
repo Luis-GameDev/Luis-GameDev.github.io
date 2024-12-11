@@ -159,6 +159,10 @@ main {
     pointer-events: none;
 }
 
+#github {
+    margin-left: 26em;
+}
+
 h3 {
     font-size: 1em;
 }
@@ -170,4 +174,27 @@ div button {
 
 div button:hover {
     cursor: pointer;
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        padding: 0;
+    }
+
+    .portfolio_img {
+        width: 90%;
+    }
+
+    #intro {
+        width: 90%;
+        padding-right: 1em;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    #github {
+        margin-left: 1em;
+    }
 }
