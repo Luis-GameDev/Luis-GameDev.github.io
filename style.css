@@ -221,6 +221,7 @@ main {
 
 h3 {
     font-size: 1em;
+    color: #cccccc;
 }
 
 div button {
@@ -253,4 +254,24 @@ div button:hover {
     #github {
         margin-left: 1em;
     }
+}
+
+#contactcard {
+    display: flex;
+    border: solid 3px rgb(37, 37, 37);
+    padding: 1em;
+    justify-content: space-evenly;
+}
+
+#contactcard a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+#contactcard img {
+    width: 5em;
+    height: 5em;
 }
