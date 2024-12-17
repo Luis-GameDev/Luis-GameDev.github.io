@@ -3,13 +3,18 @@
     src: url('PressStart2P-Regular.ttf');
 }
 
+@font-face {
+    font-family: 'MAIN';
+    src: url('Galileo-Regular.ttf');
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
-    font-family: cursive;
+    font-family: Helvetica, sans-serif;
     background-color: #121212;
     color: #ffffff;
     padding-left: 3em;

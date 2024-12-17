@@ -154,21 +154,21 @@
             <h2 style="font-size: 2em;">Portfolio</h2>
             <div id="HDab">
                 <h3>Heidelbergs Abyss</h3>
-                <img class="portfolio_img appear" src="img/hdab2.png" style="width: 100%;" alt="Heidelbergs Abyss"/>
+                <img class="portfolio_img" src="img/hdab2.png" style="width: 100%;" alt="Heidelbergs Abyss"/>
                 <a href="HeidelbergsAbyss.zip" download="HeidelbergsAbyss.zip">
                     <button>📥 Download</button>
                 </a>
             </div>
             <div id="GRpz">
                 <h3>Gravity Puzzle</h3>
-                <img class="portfolio_img appear" src="img/grpz.png" style="width: 100%;" alt="Gravity Puzzle"/>
+                <img class="portfolio_img" src="img/grpz.png" style="width: 100%;" alt="Gravity Puzzle"/>
                 <a href="GravityPuzzle.zip" download="GravityPuzzle.zip">
                     <button>📥 Download</button>
                 </a>
             </div>
             <div id="Olex">
                 <h3>Outlast Exile</h3>
-                <img class="portfolio_img appear" src="img/exile2.png" style="width: 100%;" alt="Outlast Exile"/>
+                <img class="portfolio_img" src="img/exile2.png" style="width: 100%;" alt="Outlast Exile"/>
                 <a href="OutlastExile.zip" download="OutlastExile.zip">
                     <button>📥 Download</button>
                 </a>
@@ -185,6 +185,7 @@
                     <img src="icons/nodejs-original-wordmark.svg" alt="Node.js" />
                     <img src="icons/raspberrypi-original.svg" alt="Raspberry Pi" />
                 </div>
+                <img class="portfolio_img" src="img/asgbot.png" style="width: 100%; margin-top: 1em;" alt="Asgang Bot"/>
                 <div id="asgbot">
                     <p>
                         <strong>A$gang Bot</strong> is a Discord community bot built with <strong>Discord.JS v14</strong>, designed to provide entertainment and foster a friendly community atmosphere. Its core features include:
@@ -204,8 +205,9 @@
                         The bot combines playful elements with interaction, creating an active and enjoyable community environment.
                     </p>
                 </div>
+                <a href="https://discord.com/oauth2/authorize?client_id=1210339509636562954&scope=bot&permissions=8">Get the bot</a>
             </div>
-            <div id="whybot">
+            <div style="margin-top: 5em;">
                 <h3>Why Bot</h2>
                 <div class="techuse">
                     <img src="icons/javascript-original.svg" alt="JavaScript" />
@@ -216,7 +218,10 @@
                     <img src="icons/axios-plain.svg" alt="Axios" />
                     <img src="icons/nodemon-original.svg" alt="Nodemon" />
                 </div>
-                <p></p>
+                <img class="portfolio_img" src="img/whybot.png" style="width: 100%; margin-top: 1em;" alt="Asgang Bot"/>
+                <div id="whybot">
+                    <p><strong>Why Bot</strong> is a Discord community bot built with <strong>Discord.JS v14</strong>, designed for the Albion Online guild “WHY NOT.” Its key features include a <strong>fame tracking system</strong> to monitor and rank the progress of guild members, a <strong>vouch system</strong> to establish trust within the community, and <strong>Albion Online API integration</strong> to verify guild membership. By automating workflows like player tracking, profile linking, and performance recognition, the bot streamlines guild logistics and boosts member engagement. Using <strong>JSON-based persistent storage</strong>, Why Bot ensures reliable data management while supporting the guild’s operational goals.</p>
+                </div>
             </div>
         </section>
         <section id="contact">
@@ -255,13 +260,14 @@
                 techSection.textContent = "Mit was ich arbeite";
                 languageSwitcher.textContent = "Deutsch";
                 asgbot.innerHTML = `<p><strong>A$gang Bot</strong> ist ein Discord-Community-Bot, entwickelt mit <strong>Discord.JS v14</strong>, der für Unterhaltung und ein angenehmes Gemeinschaftsumfeld sorgt. Zu seinen Kernfunktionen gehören:</p><ul><li><strong>Richtig oder Knast:</strong> Ein tägliches Frage-Feature, bei dem Mitglieder spannende oder lustige Fragen beantworten müssen, um die Gemeinschaft zu beleben.</li><li><strong>/hate-Befehle:</strong> Spieler können humorvoll ihren „Hass“ gegenüber bestimmten Personen ausdrücken, was für unterhaltsame Interaktionen sorgt.</li><li><strong>Story-Spiel:</strong> Ein kreatives Mini-Game, bei dem Mitglieder gemeinsam Geschichten schreiben, indem sie abwechselnd ein Wort hinzufügen, wodurch kreative und lustige Erzählungen entstehen.</li></ul><p>Der Bot verbindet spielerische Elemente mit Interaktion und schafft so eine aktive und unterhaltsame Community-Atmosphäre.</p>`
+                whybot.innerHTML = `<p><strong>Why Bot</strong> ist ein Discord-Community-Bot, der mit <strong>Discord.JS v14</strong> entwickelt wurde und für die Albion Online Gilde “WHY NOT” konzipiert wurde. Zu den Hauptfunktionen gehört ein <strong>Fame-Tracking-System</strong>, um die Fortschritte der Gildenmitglieder zu überwachen und zu rangieren, ein <strong>Vouch-System</strong>, um Vertrauen innerhalb der Community aufzubauen, und eine <strong>Albion Online API-Integration</strong>, um die Gildenmitgliedschaft zu überprüfen. Durch die Automatisierung von Workflows wie der Spielerüberwachung, dem Profil-Linking und der Leistungsanerkennung optimiert der Bot die Gildenlogistik und steigert das Engagement der Mitglieder. Mit der Verwendung von <strong>JSON-basierter persistenten Speicherung</strong> stellt Why Bot eine zuverlässige Datenverwaltung sicher und unterstützt die operativen Ziele der Gilde.</p>`
             } else {
                 introText.textContent = "I'm a junior game and web developer with a passion for creating innovative and interactive digital tools, websites and games. I'm mainly focusing on the backend side of programming while I also have an interest in 3D Art and Asset Modeling.";
                 introLocation.textContent = "Mannheim, Germany";
                 techSection.textContent = "What I work with";
                 languageSwitcher.textContent = "English";
-                asgbot.innerHTML = `<p>
-                    <strong>A$gang Bot</strong> is a Discord community bot built with <strong>Discord.JS v14</strong>, designed to provide entertainment and foster a friendly community atmosphere. Its core features include:</p><ul><li><strong>True or Jail:</strong> A daily question feature where members answer fun or intriguing questions to engage the community.</li><li><strong>/hate Commands:</strong> Players can humorously express their "hate" for specific people, sparking entertaining interactions.</li><li><strong>Story Game:</strong> A creative mini-game where members collaboratively write stories by adding one word at a time, resulting in amusing and imaginative tales.</li></ul><p>The bot combines playful elements with interaction, creating an active and enjoyable community environment.</p>`
+                asgbot.innerHTML = `<p><strong>A$gang Bot</strong> is a Discord community bot built with <strong>Discord.JS v14</strong>, designed to provide entertainment and foster a friendly community atmosphere. Its core features include:</p><ul><li><strong>True or Jail:</strong> A daily question feature where members answer fun or intriguing questions to engage the community.</li><li><strong>/hate Commands:</strong> Players can humorously express their "hate" for specific people, sparking entertaining interactions.</li><li><strong>Story Game:</strong> A creative mini-game where members collaboratively write stories by adding one word at a time, resulting in amusing and imaginative tales.</li></ul><p>The bot combines playful elements with interaction, creating an active and enjoyable community environment.</p>`
+                whybot.innerHTML = `<p><strong>Why Bot</strong> is a Discord community bot built with <strong>Discord.JS v14</strong>, designed for the Albion Online guild “WHY NOT.” Its key features include a <strong>fame tracking system</strong> to monitor and rank the progress of guild members, a <strong>vouch system</strong> to establish trust within the community, and <strong>Albion Online API integration</strong> to verify guild membership. By automating workflows like player tracking, profile linking, and performance recognition, the bot streamlines guild logistics and boosts member engagement. Using <strong>JSON-based persistent storage</strong>, Why Bot ensures reliable data management while supporting the guilds operational goals.</p>`
             }
         }
     </script>
