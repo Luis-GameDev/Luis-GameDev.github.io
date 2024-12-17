@@ -106,6 +106,16 @@ main {
     }
 }
 
+.techuse {
+    display: flex;
+    height: 3em;
+    width: 100%;
+}
+
+.techuse img {
+    margin-left: 1em;
+}
+
 #intro::before {
     filter: blur(0.6rem);
 }
