@@ -63,10 +63,51 @@ main {
 }
 
 #intro {
+    position: relative;
     text-align: center;
     margin-top: 50px;
-    border: solid 2px rgb(71, 71, 71);
     padding: 1em;
+    background: rgb(24, 24, 24);
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-radius: 10px;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+#intro::after, #intro::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), transparent 70%, blue);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -3;
+    padding: 3px;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+
+    to {
+        --angle: 360deg;
+    }
+}
+
+#intro::before {
+    filter: blur(0.6rem);
 }
 
 #intro h1 {
@@ -160,7 +201,7 @@ main {
 }
 
 #github {
-    margin-left: 26em;
+    margin-left: 24em;
 }
 
 h3 {
