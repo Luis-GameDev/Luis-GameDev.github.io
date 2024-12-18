@@ -17,8 +17,7 @@ body {
     font-family: Helvetica, sans-serif;
     background-color: #121212;
     color: #ffffff;
-    padding-left: 3em;
-    padding-right: 3em;
+   
 }
 
 header {
@@ -113,12 +112,14 @@ main {
 
 .techuse {
     display: flex;
-    height: 3em;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .techuse img {
     margin-left: 1em;
+    width: 3em;
+    height: 3em;
 }
 
 #intro::before {
@@ -202,13 +203,13 @@ main {
     background: linear-gradient(to right, rgba(18, 18, 18, 0) 0%, rgba(18, 18, 18, 1) 100%);
     width: 5em;
     height: 5em;
-    margin-left: 30em;
     margin-bottom: -2em;
 }
 
 #Grad {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     position: relative;
     margin-bottom: -4em;
     z-index: 100;
@@ -234,9 +235,6 @@ div button:hover {
 }
 
 @media screen and (max-width: 720px) {
-    body {
-        padding: 0;
-    }
 
     .portfolio_img {
         width: 90%;
@@ -244,11 +242,18 @@ div button:hover {
 
     #intro {
         width: 90%;
-        padding-right: 1em;
+        margin-left: 0em;
+        margin-right: 0em;
     }
 
     main {
         width: 90%;
+        padding: 1em;
+    }
+
+    #Grad {
+        margin-left: -1em;
+        margin-right: -1em;
     }
 
     #github {
