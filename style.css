@@ -150,8 +150,6 @@ main {
     font-size: 2em;
 }
 
-
-
 .tech-icons:hover {
     animation-play-state: paused;
 }
