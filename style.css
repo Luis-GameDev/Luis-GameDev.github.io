@@ -150,14 +150,7 @@ main {
     font-size: 2em;
 }
 
-.tech-icons {
-    position: relative;
-    width: 100%;
-    height: 6em;
-    display: flex;
-    animation: anim 40s linear infinite;
-    z-index: 1;
-}
+
 
 .tech-icons:hover {
     animation-play-state: paused;
@@ -173,6 +166,15 @@ main {
     }
     100% {
         transform: translateX(-237%);
+    }
+}
+
+@keyframes animfast {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-400%);
     }
 }
 
@@ -258,6 +260,26 @@ div button:hover {
 
     #github {
         margin-left: 1em;
+    }
+
+    .tech-icons {
+        position: relative;
+        width: 100%;
+        height: 6em;
+        display: flex;
+        animation: animfast 30s linear infinite;
+        z-index: 1;
+    }
+}
+
+@media screen and (min-width: 721px) {
+    .tech-icons {
+        position: relative;
+        width: 100%;
+        height: 6em;
+        display: flex;
+        animation: anim 40s linear infinite;
+        z-index: 1;
     }
 }
 
